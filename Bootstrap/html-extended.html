@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8</title>
+</head>
+<body>
+    <input type="button" value="Decrease" onclick="decrease()">
+
+    <meter id="m" low="0.25" high="0.75" optimum="0" >
+        80% completed        
+    </meter>
+    
+    <input type="button" value="Increase" onclick="increase()">
+
+    <meter>
+
+        
+    </meter>
+
+    <!-- <progress name = "p">0% saved</progress>
+
+    <ruby>
+       base <rp>(</rp><rt>Ruby Car</rt><rp>)</rp> 
+    </ruby>
+
+<time>3/4/2021 11:54</time> -->
+
+<input onchange="setValue()" type="range" min="0" max="100" id="range">
+
+ 
+<audio src="videoplayback.mp4" controls="controls"> Kamala </audio>
+
+<script>
+         
+         var val = 0;
+         
+
+         function setValue(){
+            document.getElementById("m").value =   document.getElementById("range").value/100 ;
+
+         }
+    function increase(){
+        val = val +.1;
+        if (val >1){
+            val = 1;
+        }
+        document.getElementById("m").value = val.toString();
+
+    }
+    function decrease(){
+        val = val -.1;
+        if (val <0){
+            val = 0;
+        }
+        document.getElementById("m").value = val.toString();
+
+    }
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

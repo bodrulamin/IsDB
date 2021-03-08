@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Class 6</title>
+</head>
+
+<style>
+.textbox{
+	padding:5px;
+	background-color:#CFC;
+	border-radius: 5px;
+	border: 1px solid #333;
+	margin:5px;
+	 
+	
+}
+
+
+.inputbox{
+	padding:5px;
+	background-color:#CFC;
+	border-radius: 5px;
+	border: 1px solid #333;
+	margin:5px;
+	 
+	
+}
+
+label{
+	width:10%; 
+
+		
+}
+fieldset {
+  margin: auto ;
+  padding: 0 10px 10px;
+  border: 1px solid #666;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #666;
+  padding-top: 10px;
+  
+}
+legend {
+	
+	background:#600;
+	color:#FFF;
+	padding:5px;
+	border-radius:5px;
+	margin:auto;
+	
+
+}
+
+ 
+
+.btn {
+ 
+ 
+ border:1px solid #303;
+ border-radius: 5px;
+ padding:4px;
+ 
+ margin-top:2px;
+ width:20%;
+  
+
+   
+  
+}
+
+.submitarea {
+	margin:auto;
+}
+.btn:hover {
+ 
+ 
+ border:1px solid #600;
+ border-radius: 5px;
+ background:#CF3;
+ 
+  
+
+  
+}
+
+ 
+
+</style>
+<div style="margin:auto; width:500px; padding:10px; border-radius:20px;">
+
+<fieldset>
+
+	<legend>Registration</legend>
+    <form action="#" enctype="multipart/form-data" method="get">
+    
+    
+    
+    	<div class="inputbox">
+    	<label class="label">Name:</label>
+        <input type="text" name="name" placeholder="Enter Your name"/>
+        </div>
+        
+        
+        <div class="inputbox">
+        <label>Email:</label>
+        <input type="email" required="true" name="email" placeholder="Enter Your email"/>
+        </div>
+        
+        <div class="inputbox">
+        <label>Password:</label>
+        <input type="password" value="" placeholder="Enter Your Passowrd"/>
+        </div>
+        
+         
+        <div class="inputbox">
+        <label>Age:</label>
+        <input type="number" min="15" max="50" value="" placeholder="Age"/>
+        </div>
+        
+           
+        <div class="inputbox">
+        <label>Gender:</label>
+        <input type="radio" name="gen" value="m"/>Male
+        <input type="radio" name="gen" value="f"/>Female
+        </div>
+        
+        
+       <div class="inputbox">
+        <label>Country:</label>
+        <select name="cnt">
+        	<option>Bangladesh</option>
+        	<option>Pakistan</option>
+        	<option>India</option>
+        	<option>Bhutan</option>
+            
+        </select>
+      
+        </div>
+        
+        
+                
+       <div class="inputbox">
+        <label>Product:</label>
+        <select name="pdt">
+        	<optgroup label="Mobile">
+            
+            	<option>Samsung</option>
+            	<option>Oppo</option>
+            	<option>Nokia</option>
+            	<option>Sony</option>
+            	 
+            </optgroup>
+            
+            	<optgroup label="Laptop">
+              	<option>Samsung</option>
+            	<option>Dell</option>
+             	<option>Sony</option>
+            	 
+            </optgroup>
+            
+            
+            
+        </select>
+      
+        </div>
+        
+        
+    <div class="inputbox">
+        <label>Skills:</label>
+        <input type="checkbox" name="html" value="HTML"/>
+        <label>HTML</label>
+      
+        <input type="checkbox" name="css" value="CSS"/>
+        <label>CSS</label>
+
+        <input type="checkbox" checked="true" name="java" value="Java"/>
+        <label>Java</label>
+         
+         </div>
+        
+        
+        <div class="inputbox">
+         
+        <label>Address:</label>
+        <br/>
+         <textarea rows="5" cols="40">
+         
+         </textarea>
+         
+         
+        
+         </div>
+        
+        
+          <div class="inputbox">
+        <label>Image:</label>
+        <input type="file" multiple value=""/>
+        </div>
+        
+        
+        
+        <div class="inputbox">
+        	
+            <label>Zip</label>
+            <input pattern="[A-Za-z]{3}" />
+        
+        </div>
+        
+   
+        
+        
+          
+          
+          <div class="submitarea">
+        
+        <input type="button" class="btn"  value="Submit" name"submit" />
+        <button  type="reset" class="btn" value="Reset" >Reset</button>
+      
+        
+        
+        </div>
+        
+        
+      
+    </form>
+
+
+</fieldset>
+
+  </div>
+
+
+
+
+<body>
+</body>
+</html>
